@@ -4,27 +4,65 @@ h2 {
 	font-family: 'Raleway', sans-serif;
 }
 
-.navbar {
-	height: 4rem;
-}
 
-.navbar-brand {
-	font-size: 2.5rem;
-	span {
-		color: $brand-primary;
+#main-nav {
+	height: 4.5rem;
+	.container {
+		
+
+		@media screen and (max-width: 576px) {
+			width: 100%;
+		}
 	}
 }
 
+.navbar {
+	
+	background-color: $black;
+	width: 100%;
+	padding: 1rem 0;
+	z-index: 9999;
+}
+
+// .navbar-toggler-icon {
+// 	background-color: white!important;
+// }
+
+.navbar-brand {
+	font-size: 2rem;
+	padding: 0;
+	margin: 0;
+	span {
+		color: $brand-primary;
+	}
+
+	&:hover {
+		color: $white;
+	}
+}
+
+.navbar-collapse {
+	background-color: $black;
+	
+}
 .nav-item {
 	font-size: 0.8rem;
 	margin-left: 1rem;
 }
 
-// .nav-link {
-// 	color: white!important;
-// }
+.nav-link {
+	@media screen and (max-width: 768px) {
+		padding: 1rem 0!important;	
+	}
+}
 
-#header {
+.navbar-toggler {
+	align-self: center;
+}
+
+
+
+#main-header {
 	background: url(../img/header.jpg) no-repeat center;
 	background-size: cover;
 	color: #fff;
@@ -35,22 +73,54 @@ h2 {
 		text-transform: uppercase;
 
 		span {
-			color: $brand-primary;
+			
 			font-weight: 300;
 		}
+	}
+	
+	.btn-outline-secondary:hover {
+		color: $brand-primary;
 	}
 
 	.card {
 		background-color: white;
+		border: none;
+		
+		
 	}
 
 	.card-header {
-		background-color: $gray-lighter;
+		background-color: $gray-lightest;
+	}
+	
+
+}
+
+.main-header-form {
+	.container {
+
+	}
+	.form-control {
+		padding: 2rem 0.75rem 0.5rem;
+		border-radius: 0;
+		border: none;
+		border-bottom: 1px solid $gray-lighter;
+		font-size: 0.8rem;
+		&::placeholder {
+			color:  $gray-light;
+		}
+		
 	}
 
-	.card-footer {
+	.btn {
+		padding: 1rem 0;
 		background-color: $brand-secondary;
+		&:hover {
+			background-color: $brand-primary;
+			cursor: pointer;
+		}
 	}
+	
 }
 
 .line {
@@ -66,6 +136,12 @@ h2 {
 		background-color: $brand-primary;
 	}
 }
+
+
+
+
+
+
 
 #social-media {
 	padding: 1.5rem;
@@ -89,4 +165,8 @@ h2 {
 #empty {
 	background-color: pink;
 	height: 300px;	
+}
+
+.text-dark {
+	color: $gray!important;
 }
