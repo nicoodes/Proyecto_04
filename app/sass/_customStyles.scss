@@ -13,6 +13,7 @@ p {
 	font-size: 0.85rem;
 }
 
+
 .text-dark {
 	color: $gray!important;
 }
@@ -267,5 +268,108 @@ p {
 		color: $brand-primary;
 		border-radius: 50%;
 		padding: 2rem;
+	}
+}
+
+// Feature 5
+#feature-five {
+	.card {
+		border: none;
+	}
+	h5 {
+		color: $white;
+		font-weight: 600;
+	}
+	.card-header {
+		background-color: $gray;
+		border: none;
+		border-bottom: 1px solid $gray-light;
+		
+		
+	}
+	
+	.card-block {
+		border: none;
+		background-color: $gray;
+		h2 {
+			color: $white;
+			font-weight: 600;
+			span {
+				font-size: 6.5rem;
+				font-weight: 700;
+			}
+		}
+	}
+	
+	.list-group-item {
+		justify-content: center;
+		
+		border: 1px solid $gray-lightest;
+		border-right: none;
+
+		border-left: none;
+		border-bottom: none;
+	}
+	
+	.card-footer {
+		background-color: $brand-primary;
+		
+	}
+
+
+}
+
+.price-option {
+	transition: 0.4s;
+	margin-top: 2rem;
+	&:hover {
+		transform: scale(1.05);
+		box-shadow: 0 0 25px $brand-secondary;
+	}
+}
+
+// Feature 6
+#feature-six {
+	.media {
+		margin-top: 2rem;
+		img {
+			width: 80px;
+		}
+
+		h5 {
+			font-weight: 700;
+			color: $gray;
+		}
+	}
+}
+
+
+
+.buble {
+	background-color: $gray-lightest;
+	color: $gray-light;
+	padding: 2rem 1rem;
+	border-radius: 3px;
+	position: relative;
+}
+
+.triangle {
+	display: block;
+	position: absolute;
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 12px solid transparent;
+	border-top: 15px solid $gray-lightest;
+	top: 100%;
+	left: 10%;
+}
+
+// Feature 7
+#feature-seven  {
+	background: url(../img/big.jpg) no-repeat center;
+	background-size: cover;
+	.feature-content{
+		padding: 5rem 0;
 	}
 }
