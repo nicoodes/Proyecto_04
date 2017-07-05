@@ -1,5 +1,4 @@
 // Base
-
 h2 {
 	font-family: 'Raleway', sans-serif;
 	color: $gray-dark;
@@ -8,18 +7,13 @@ h5 {
 	font-weight: 500;
 	color: $black;
 }
-
 p {
 	font-size: 0.85rem;
 }
-
-
 .text-dark {
 	color: $gray!important;
 }
-
 ///Shapes
-
 .line {
 	display: block;
 	height: 2px;
@@ -28,7 +22,6 @@ p {
 	&-white {
 		background-color: $white;
 	}
-
 	&-main {
 		background-color: $brand-primary;
 	}
@@ -38,22 +31,17 @@ p {
 #main-nav {
 	height: 4.5rem;
 	.container {
-		
-
 		@media screen and (max-width: 576px) {
 			width: 100%;
 		}
 	}
 }
-
 .navbar {
-	
 	background-color: $black;
 	width: 100%;
 	padding: 1rem 0;
 	z-index: 9999;
 }
-
 .navbar-brand {
 	font-size: 2rem;
 	padding: 0;
@@ -66,28 +54,21 @@ p {
 		color: $white;
 	}
 }
-
 .navbar-collapse {
-	background-color: $black;
-	
+	background-color: $black;	
 }
 .nav-item {
 	font-size: 0.8rem;
 	margin-left: 1rem;
 }
-
 .nav-link {
 	@media screen and (max-width: 768px) {
 		padding: 1rem 0!important;	
 	}
 }
-
 .navbar-toggler {
 	align-self: center;
 }
-
-
-
 /// Main header
 #main-header {
 	background: url(../img/header.jpg) no-repeat center;
@@ -109,6 +90,7 @@ p {
 	}
 	.btn-outline-secondary:hover {
 		color: $brand-primary;
+		cursor: pointer;
 	}
 	.card {
 		background-color: white;
@@ -117,10 +99,7 @@ p {
 	.card-header {
 		background-color: $gray-lightest;
 	}
-	
-
 }
-
 .main-header-form {
 	.form-control {
 		padding: 2rem 0.75rem 0.5rem;
@@ -141,10 +120,6 @@ p {
 		}
 	}
 }
-
-
-
-
 // Social media
 #social-media {
 	padding: 1.5rem;
@@ -153,17 +128,11 @@ p {
 		color: $gray;
 		font-weight: 700;
 	}
-
-	// p {
-	// 	color: $gray-lighter;
-	// }
-	
 	.fa {
 		font-size: 3.25rem;
 		color: $gray-lighter;
 		flex: 1;
 		text-align: center;
-
 		&:hover {
 			color: $brand-primary;
 		}
@@ -172,25 +141,17 @@ p {
 		}
 	}
 }
-
-
-
-
 // Feature section all
-
 .feature-content {
 	padding: 6rem 0;
 	img {
 		width: 100%;
 	}
 }
-
 .feature-dark {
 	background-color: $gray-lightest;
 }
-
 // Feature 1
-
 #feature-one {
 	.nav-link {
 		width: 6.5rem;
@@ -200,19 +161,16 @@ p {
 		justify-content: center;
 		display: flex;
 		align-items: center;
-
 		@media screen and (max-width: 576px) {
 			width: 5.5rem;
 			height: 5.5rem;
 		}
-
 		&.active,
 		&:hover {
 			background-color: $brand-primary!important;
 			color: $white;
 		}
 	}
-
 	@media screen and (max-width: 576px) {
 		.nav {
 			flex-direction: row!important;
@@ -221,9 +179,7 @@ p {
 		}
 	}
 }
-
 // Feature 2
-
 #feature-two {
 	.line {
 		margin: 1.25rem 0;
@@ -235,17 +191,12 @@ p {
 		padding: 0.8rem;
 	}
 }
-
-
 #empty {
 	background-color: pink;
 	height: 300px;	
 }
-
 // Feature 3
-
 // Feature 4
-
 #feature-four {
 	h5 {
 		margin: 1.8rem 0;
@@ -270,7 +221,6 @@ p {
 		padding: 2rem;
 	}
 }
-
 // Feature 5
 #feature-five {
 	.card {
@@ -283,11 +233,8 @@ p {
 	.card-header {
 		background-color: $gray;
 		border: none;
-		border-bottom: 1px solid $gray-light;
-		
-		
+		border-bottom: 1px solid $gray-light;	
 	}
-	
 	.card-block {
 		border: none;
 		background-color: $gray;
@@ -299,26 +246,18 @@ p {
 				font-weight: 700;
 			}
 		}
-	}
-	
+	}	
 	.list-group-item {
 		justify-content: center;
-		
 		border: 1px solid $gray-lightest;
 		border-right: none;
-
 		border-left: none;
 		border-bottom: none;
 	}
-	
 	.card-footer {
 		background-color: $brand-primary;
-		
 	}
-
-
 }
-
 .price-option {
 	transition: 0.4s;
 	margin-top: 2rem;
@@ -327,7 +266,6 @@ p {
 		box-shadow: 0 0 25px $brand-secondary;
 	}
 }
-
 // Feature 6
 #feature-six {
 	.media {
@@ -335,16 +273,12 @@ p {
 		img {
 			width: 80px;
 		}
-
 		h5 {
 			font-weight: 700;
 			color: $gray;
 		}
 	}
 }
-
-
-
 .buble {
 	background-color: $gray-lightest;
 	color: $gray-light;
@@ -352,7 +286,6 @@ p {
 	border-radius: 3px;
 	position: relative;
 }
-
 .triangle {
 	display: block;
 	position: absolute;
@@ -364,12 +297,51 @@ p {
 	top: 100%;
 	left: 10%;
 }
-
 // Feature 7
 #feature-seven  {
 	background: url(../img/big.jpg) no-repeat center;
 	background-size: cover;
 	.feature-content{
 		padding: 5rem 0;
+	}
+	.btn-outline-secondary:hover {
+		color: $brand-primary;
+	}
+}
+// Contact us
+.contact-us-form {
+	.form-control{
+		padding: 2rem 1rem 0.5rem;
+		border-radius: 0;
+		border: none;
+		border-bottom: 1px solid $gray-lighter;
+		font-size: 0.8rem;
+		color:   $gray-light;
+		&::placeholder {
+			color:  $gray-light;
+		}
+	}
+	textarea {
+		padding-bottom: 2.5rem;
+	}
+	.btn:hover {
+		cursor: pointer;
+	}
+}
+// Main footer
+#main-footer {
+	background-color: $black;
+	padding: 0.8rem;
+}
+.main-footer-icons {
+	a {
+		margin-bottom: 0.5rem!important;
+		font-size: 1.5rem;
+		color: $gray;
+		margin: 0 1rem;
+		&:hover {
+			color: $brand-primary;
+			transform: scale(1.25);
+		}
 	}
 }
