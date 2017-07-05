@@ -2881,6 +2881,19 @@ tbody.collapse.show {
   padding-left: 0;
   border-radius: 0; }
 
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.media-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
 .close {
   float: right;
   font-size: 1.5rem;
@@ -5183,7 +5196,28 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
    Custom application specific styles
    -------------------------------------------------------- */
 h2 {
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  color: #212121; }
+
+h5 {
+  font-weight: 500;
+  color: #000; }
+
+p {
+  font-size: 0.85rem; }
+
+.text-dark {
+  color: #333333 !important; }
+
+.line {
+  display: block;
+  height: 2px;
+  width: 65px;
+  margin: 2rem 0; }
+  .line-white {
+    background-color: #fff; }
+  .line-main {
+    background-color: #ff8b38; }
 
 #main-nav {
   height: 4.5rem; }
@@ -5231,6 +5265,10 @@ h2 {
     text-transform: uppercase; }
     #main-header h1 span {
       font-weight: 300; }
+  #main-header h2 {
+    color: #fff; }
+  #main-header p {
+    font-size: 1rem; }
   #main-header .btn-outline-secondary:hover {
     color: #ff8b38; }
   #main-header .card {
@@ -5259,34 +5297,102 @@ h2 {
     background-color: #ff8b38;
     cursor: pointer; }
 
-.line {
-  display: block;
-  height: 2px;
-  width: 65px;
-  margin: 2rem 0; }
-  .line-white {
-    background-color: #fff; }
-  .line-main {
-    background-color: #ff8b38; }
-
 #social-media {
   padding: 1.5rem;
   border-bottom: 2px solid #cccccc; }
   #social-media h5 {
-    color: #333333; }
-  #social-media p {
-    color: #cccccc; }
+    color: #333333;
+    font-weight: 700; }
   #social-media .fa {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
     color: #cccccc;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     text-align: center; }
+    #social-media .fa:hover {
+      color: #ff8b38; }
+    @media screen and (max-width: 768px) {
+      #social-media .fa {
+        margin-top: 1rem; } }
+
+.feature-content {
+  padding: 6rem 0; }
+  .feature-content img {
+    width: 100%; }
+
+.feature-dark {
+  background-color: #f5f5f5; }
+
+#feature-one .nav-link {
+  width: 6.5rem;
+  height: 6.5rem;
+  margin-top: 0.1rem;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media screen and (max-width: 576px) {
+    #feature-one .nav-link {
+      width: 5.5rem;
+      height: 5.5rem; } }
+  #feature-one .nav-link.active, #feature-one .nav-link:hover {
+    background-color: #ff8b38 !important;
+    color: #fff; }
+
+@media screen and (max-width: 576px) {
+  #feature-one .nav {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    margin-bottom: 2rem;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
+#feature-two .line {
+  margin: 1.25rem 0; }
+
+#feature-two .fa-cloud-download {
+  border: 2px solid #ff8b38;
+  color: #ff8b38;
+  border-radius: 50%;
+  padding: 0.8rem; }
 
 #empty {
   background-color: pink;
   height: 300px; }
 
-.text-dark {
-  color: #333333 !important; }
+#feature-four h5 {
+  margin: 1.8rem 0;
+  font-weight: 700;
+  color: #333333; }
+
+#feature-four i {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  margin: auto;
+  margin-top: 2rem; }
+
+#feature-four .fa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+  border: 2px solid #ff8b38;
+  color: #ff8b38;
+  border-radius: 50%;
+  padding: 2rem; }

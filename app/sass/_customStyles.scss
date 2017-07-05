@@ -1,10 +1,39 @@
-
+// Base
 
 h2 {
 	font-family: 'Raleway', sans-serif;
+	color: $gray-dark;
+}
+h5 {
+	font-weight: 500;
+	color: $black;
 }
 
+p {
+	font-size: 0.85rem;
+}
 
+.text-dark {
+	color: $gray!important;
+}
+
+///Shapes
+
+.line {
+	display: block;
+	height: 2px;
+	width: 65px;
+	margin: 2rem 0;
+	&-white {
+		background-color: $white;
+	}
+
+	&-main {
+		background-color: $brand-primary;
+	}
+}
+
+// Main nav
 #main-nav {
 	height: 4.5rem;
 	.container {
@@ -23,10 +52,6 @@ h2 {
 	padding: 1rem 0;
 	z-index: 9999;
 }
-
-// .navbar-toggler-icon {
-// 	background-color: white!important;
-// }
 
 .navbar-brand {
 	font-size: 2rem;
@@ -62,33 +87,32 @@ h2 {
 
 
 
+/// Main header
 #main-header {
 	background: url(../img/header.jpg) no-repeat center;
 	background-size: cover;
 	color: #fff;
 	padding: 6rem 0;
-	
 	h1 {
 		font-size: 5rem;
 		text-transform: uppercase;
-
 		span {
-			
 			font-weight: 300;
 		}
 	}
-	
+	h2 {
+		color: $white;
+	}
+	p {
+		font-size: 1rem;
+	}
 	.btn-outline-secondary:hover {
 		color: $brand-primary;
 	}
-
 	.card {
 		background-color: white;
 		border: none;
-		
-		
 	}
-
 	.card-header {
 		background-color: $gray-lightest;
 	}
@@ -97,9 +121,6 @@ h2 {
 }
 
 .main-header-form {
-	.container {
-
-	}
 	.form-control {
 		padding: 2rem 0.75rem 0.5rem;
 		border-radius: 0;
@@ -109,9 +130,7 @@ h2 {
 		&::placeholder {
 			color:  $gray-light;
 		}
-		
 	}
-
 	.btn {
 		padding: 1rem 0;
 		background-color: $brand-secondary;
@@ -120,53 +139,133 @@ h2 {
 			cursor: pointer;
 		}
 	}
-	
-}
-
-.line {
-	display: block;
-	height: 2px;
-	width: 65px;
-	margin: 2rem 0;
-	&-white {
-		background-color: $white;
-	}
-
-	&-main {
-		background-color: $brand-primary;
-	}
 }
 
 
 
 
-
-
-
+// Social media
 #social-media {
 	padding: 1.5rem;
 	border-bottom: 2px solid $gray-lighter;
 	h5{
 		color: $gray;
+		font-weight: 700;
 	}
 
-	p {
-		color: $gray-lighter;
-	}
+	// p {
+	// 	color: $gray-lighter;
+	// }
 	
 	.fa {
-		font-size: 3.5rem;
+		font-size: 3.25rem;
 		color: $gray-lighter;
 		flex: 1;
 		text-align: center;
+
+		&:hover {
+			color: $brand-primary;
+		}
+		@media screen and (max-width: 768px) {
+			margin-top: 1rem;
+		}
 	}
 }
+
+
+
+
+// Feature section all
+
+.feature-content {
+	padding: 6rem 0;
+	img {
+		width: 100%;
+	}
+}
+
+.feature-dark {
+	background-color: $gray-lightest;
+}
+
+// Feature 1
+
+#feature-one {
+	.nav-link {
+		width: 6.5rem;
+		height: 6.5rem;
+		margin-top: 0.1rem;
+		text-align: center;
+		justify-content: center;
+		display: flex;
+		align-items: center;
+
+		@media screen and (max-width: 576px) {
+			width: 5.5rem;
+			height: 5.5rem;
+		}
+
+		&.active,
+		&:hover {
+			background-color: $brand-primary!important;
+			color: $white;
+		}
+	}
+
+	@media screen and (max-width: 576px) {
+		.nav {
+			flex-direction: row!important;
+			margin-bottom: 2rem;
+			justify-content: space-around;
+		}
+	}
+}
+
+// Feature 2
+
+#feature-two {
+	.line {
+		margin: 1.25rem 0;
+	}
+	.fa-cloud-download {
+		border: 2px solid $brand-primary;
+		color: $brand-primary;
+		border-radius: 50%;
+		padding: 0.8rem;
+	}
+}
+
 
 #empty {
 	background-color: pink;
 	height: 300px;	
 }
 
-.text-dark {
-	color: $gray!important;
+// Feature 3
+
+// Feature 4
+
+#feature-four {
+	h5 {
+		margin: 1.8rem 0;
+		font-weight: 700;
+		color: $gray;
+	}
+	i {
+		display: block;
+		width: 4rem;
+		height: 4rem;
+		margin: auto;
+		margin-top: 2rem;
+	}
+	.fa {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2rem;
+		border: 2px solid $brand-primary;
+		color: $brand-primary;
+		border-radius: 50%;
+		padding: 2rem;
+	}
 }
