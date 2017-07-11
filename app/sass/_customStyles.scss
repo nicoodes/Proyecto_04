@@ -202,22 +202,28 @@ p {
 		font-weight: 700;
 		color: $gray;
 	}
-	i {
+	// i {
+	// 	display: block;
+	// 	width: 4rem;
+	// 	height: 4rem;
+	// 	margin: auto;
+	// 	margin-top: 2rem;
+	// }
+	.fa {
 		display: block;
 		width: 4rem;
 		height: 4rem;
-		margin: auto;
-		margin-top: 2rem;
-	}
-	.fa {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		margin: 0 auto;
+		text-align: center;
+
+		// display: flex;
+		// align-items: center;
+		// justify-content: center;
 		font-size: 2rem;
 		border: 2px solid $brand-primary;
 		color: $brand-primary;
 		border-radius: 50%;
-		padding: 2rem;
+		padding: 0.8rem;
 	}
 }
 // Feature 5

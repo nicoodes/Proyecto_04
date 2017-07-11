@@ -5538,28 +5538,17 @@ p {
   font-weight: 700;
   color: #333333; }
 
-#feature-four i {
+#feature-four .fa {
   display: block;
   width: 4rem;
   height: 4rem;
-  margin: auto;
-  margin-top: 2rem; }
-
-#feature-four .fa {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0 auto;
+  text-align: center;
   font-size: 2rem;
   border: 2px solid #ff8b38;
   color: #ff8b38;
   border-radius: 50%;
-  padding: 2rem; }
+  padding: 0.8rem; }
 
 #feature-five .card {
   border: none; }
