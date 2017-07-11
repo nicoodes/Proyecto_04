@@ -5384,11 +5384,9 @@ p {
   .line-main {
     background-color: #ff8b38; }
 
-#main-nav {
-  height: 4.5rem; }
-  @media screen and (max-width: 576px) {
-    #main-nav .container {
-      width: 100%; } }
+@media screen and (max-width: 576px) {
+  #main-nav .container {
+    width: 100%; } }
 
 .navbar {
   background-color: #000;
